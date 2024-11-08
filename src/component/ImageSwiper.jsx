@@ -37,19 +37,13 @@ export default function ImageSwiper() {
           <Card image="../Nikhil.jpg" name="Nikhil Dadhich" description="Web Developer"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Card image="../Arth.jpg" name="Arth Parashar" description="Lead"/>
+          <Card image="../Arth.jpg" name="Lakshit Khandelwal" description="Lead"/>
         </SwiperSlide>
         <SwiperSlide>
           <Card image="../Ravi.jpg" name="Ravi Kotadiya" description="ML Developer"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Card image="../Viswajeet.jpg" name="Vishwajeet Valse" description="Web Developer"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image="../Runya.jpg" name="Runya Masram" description="Design"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image="../Anirudh.jpg" name="Aniruddha Date" description="Design"/>
+          <Card image="../Viswajeet.jpg" name="Vipin Mishra" description="Web Developer"/>
         </SwiperSlide>
       </Swiper>
     </div>
