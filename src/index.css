@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #root{
+background: #393f7c;
+background: -webkit-radial-gradient(circle, #393f7c 0%, #1a132b 100%);
+background: radial-gradient(circle, #393f7c 0%, #1a132b 100%);
+} */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Roundness of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar color on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+.nav{
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+/* Video should cover the entire page */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* This is for the content above the video */
+
+.nav-item {
+  position: relative;
+  padding-bottom: 4px; /* Space for the underline */
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: currentColor; /* Use the text color for the underline */
+  transition: width 0.3s ease, left 0.3s ease; /* Smooth transition */
+  transform: translateX(-50%); /* Center the underline */
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0); /* Remove centering effect on hover */
+}
+
+/* styles.css */
+.prediction-page {
+  text-align: center;
+  margin: 2rem;
+}
+
+.options {
+  margin-top: 1rem;
+}
+
+.option-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  /* padding: 1rem 2rem; */
+  /* margin: 0.5rem; */
+  /* border-radius: 0.25rem; */
+  cursor: pointer;
+  /* font-size: 1rem; */
+  transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #0056b3;
+}
+
+
+.prediction-form {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
