@@ -6,8 +6,8 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Load the trained model
-model_path = r'ML\MODEL\Best_neural_netwok.pkl'
-xls_path = r'ML\MODEL\dataset_SIH_2024.xlsx'
+model_path = r'Best_neural_netwok.pkl'
+xls_path = r'dataset_SIH_2024.xlsx'
 model = joblib.load(model_path)
 
 # Load and prepare the dataset
